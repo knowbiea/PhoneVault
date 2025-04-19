@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23727" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23721"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ImageGalleryVC" customModule="SocialApp" customModuleProvider="target">
+            <connections>
+                <outlet property="imageView" destination="Ez4-lK-ni7" id="kh0-Y0-AZA"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fX4-Bm-yzK">
+                    <rect key="frame" x="0.0" y="118" width="393" height="666"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="US6-4r-MWW">
+                            <rect key="frame" x="16" y="16" width="361" height="200"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ez4-lK-ni7">
+                                    <rect key="frame" x="0.0" y="0.0" width="361" height="200"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="200" id="ecS-j1-pnY"/>
+                                    </constraints>
+                                </imageView>
+                            </subviews>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="9NY-EC-4V3">
+                            <rect key="frame" x="16" y="609" width="361" height="41"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="maj-Dq-rD9">
+                                    <rect key="frame" x="0.0" y="0.0" width="361" height="41"/>
+                                    <color key="backgroundColor" red="0.83529411760000005" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="15"/>
+                                    <inset key="contentEdgeInsets" minX="0.0" minY="10" maxX="0.0" maxY="10"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" title="Show Image / Gallery">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="showCameraGalleryAction:" destination="-1" eventType="touchUpInside" id="6tR-e3-nWC"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="9NY-EC-4V3" secondAttribute="trailing" constant="16" id="1ry-MZ-DzR"/>
+                        <constraint firstItem="US6-4r-MWW" firstAttribute="top" secondItem="fX4-Bm-yzK" secondAttribute="top" constant="16" id="Frj-6K-who"/>
+                        <constraint firstAttribute="trailing" secondItem="US6-4r-MWW" secondAttribute="trailing" constant="16" id="P1R-Es-Ofy"/>
+                        <constraint firstItem="9NY-EC-4V3" firstAttribute="leading" secondItem="fX4-Bm-yzK" secondAttribute="leading" constant="16" id="nWF-7t-RcQ"/>
+                        <constraint firstItem="US6-4r-MWW" firstAttribute="leading" secondItem="fX4-Bm-yzK" secondAttribute="leading" constant="16" id="oPx-IB-GYh"/>
+                        <constraint firstAttribute="bottom" secondItem="9NY-EC-4V3" secondAttribute="bottom" constant="16" id="pOi-sc-SGO"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" name="viewBackground"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="fX4-Bm-yzK" secondAttribute="trailing" id="6cQ-xU-ur0"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="fX4-Bm-yzK" secondAttribute="bottom" id="qSm-iK-yIV"/>
+                <constraint firstItem="fX4-Bm-yzK" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="qxU-za-uD8"/>
+                <constraint firstItem="fX4-Bm-yzK" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="zVa-Yj-m2P"/>
+            </constraints>
+            <point key="canvasLocation" x="61.832061068702288" y="19.718309859154932"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="viewBackground">
+            <color red="0.99999994039535522" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

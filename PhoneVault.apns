@@ -1,0 +1,15 @@
+{
+    "Simulator Target Bundle": "com.bookxpert.PhoneVault",
+    "aps": {
+        "alert": {
+            "title" : "Phone",
+            "subtitle" : "Sample Subtitle",
+            "body" : "Sample Body",
+        },
+        "sound": "default",
+        "badge": 1,
+        "data": {
+            "id": "1"
+        }
+    }
+}
